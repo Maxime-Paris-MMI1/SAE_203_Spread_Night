@@ -1,5 +1,5 @@
 <template>
-
+<header>
   <div class="flex flex-row justify-between bg-gray-100 px-4 py-7
               lg:hidden">
     <img src="../public\Images\Logo (1).webp" alt="logo">
@@ -44,6 +44,32 @@
     <LigneMenu class="mt-9"/>
     <p class="pt-6 font-lato font-semibold text-lg">Contact</p>
   </div>
+</header>
+
+
+<footer>
+  <ul class="bg-[#0C4A6E] pb-8 flex flex-col text-center gap-8 pt-6 font-montserrat text-white font-normal text-xs lg:hidden">
+    <li><RouterLink to="/"><p>Mentions légales</p></RouterLink></li>
+    <li><RouterLink to="/"><p>Nous contacter</p></RouterLink></li>
+    <li><RouterLink to="/"><p>Nous suivre sur les réseaux</p></RouterLink></li>
+    <div class="flex flex-row justify-center gap-5 h-8 ">
+      <img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook">
+      <img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube">
+      <img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram">
+    </div>
+  </ul>
+
+  <ul class="bg-[#0C4A6E] pb-9  flex-row justify-center gap-16 pt-9 font-montserrat text-white font-normal text-xs hidden lg:flex">
+    <li class="mt-2"><RouterLink to="/"><p>Mentions légales</p></RouterLink></li>
+    <li class="mt-2"><RouterLink to="/"><p>Nous contacter</p></RouterLink></li>
+    <div class="flex flex-row justify-center gap-5 h-8 ">
+      <img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook">
+      <img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube">
+      <img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram">
+    </div>
+  </ul>
+</footer>
+ 
 
   <RouterView/>
 </template>
