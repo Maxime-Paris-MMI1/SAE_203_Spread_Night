@@ -40,11 +40,11 @@
 
     <ul class=" gap-8  font-lato font-semibold text-black flex flex-row">
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/programmation"><p>Programmation</p></RouterLink></li>
-      <LigneMenu class="mt-9"/>
+      <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/artistes"><p>Artistes</p></RouterLink></li>
-      <LigneMenu class="mt-9"/>
+      <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/festival"><p>Le Festival</p></RouterLink></li>
-      <LigneMenu class="mt-9"/>
+      <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/contact"><p>Contact</p></RouterLink></li>
     </ul>
   </div>

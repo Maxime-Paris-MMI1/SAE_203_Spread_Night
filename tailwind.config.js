@@ -24,6 +24,34 @@ module.exports = {
           '100%':{
             transform: 'translateX(0px)'
           }
+        },
+        barmenu:{
+          '0%':{
+            display: 'none',
+            transform: 'opacity(0)',
+            transform: 'translateX(-50px)',
+
+          },
+
+          '1%':{
+            display: 'block',
+            opacity: 0
+            
+          },
+
+          '100%':{
+            display: 'block',
+            transform: 'opacity(1)', 
+            transform: 'translateX(0px)',
+
+          },
+
+          'from':{
+            transform: 'rotate(0deg)',
+          },
+          'to' :{
+            transform: 'rotate(359deg)',
+          }
         }
       },
 
