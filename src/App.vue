@@ -35,17 +35,21 @@
         
   </div>
   <div class="hidden lg:flex justify-center gap-[25px] bg-gray-100 pb-4">
-    <img class="pt-4" src="../public\Images\Logo (1).webp" alt="logo">
-    <p class="pt-6 font-lato font-semibold text-lg">Programmation</p>
-    <LigneMenu class="mt-9"/>
-    <p class="pt-6 font-lato font-semibold text-lg">Artistes</p>
-    <LigneMenu class="mt-9"/>
-    <p class="pt-6 font-lato font-semibold text-lg">Le Festival</p>
-    <LigneMenu class="mt-9"/>
-    <p class="pt-6 font-lato font-semibold text-lg">Contact</p>
+    <img class="mt-5 h-10" src="../public\Images\Logo (1).webp" alt="logo">
+
+    <ul class=" gap-8  font-lato font-semibold text-black flex flex-row">
+      <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/"><p>Programmation</p></RouterLink></li>
+      <LigneMenu class="mt-9"/>
+      <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/"><p>Artistes</p></RouterLink></li>
+      <LigneMenu class="mt-9"/>
+      <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/"><p>Le Festival</p></RouterLink></li>
+      <LigneMenu class="mt-9"/>
+      <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/"><p>Contact</p></RouterLink></li>
+    </ul>
   </div>
 </header>
 
+  <RouterView/>
 
 <footer>
   <ul class="bg-[#0C4A6E] pb-8 flex flex-col text-center gap-8 pt-6 font-montserrat text-white font-normal text-xs lg:hidden">
@@ -53,9 +57,9 @@
     <li><RouterLink to="/"><p>Nous contacter</p></RouterLink></li>
     <li><RouterLink to="/"><p>Nous suivre sur les réseaux</p></RouterLink></li>
     <div class="flex flex-row justify-center gap-5 h-8 ">
-      <img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook">
-      <img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube">
-      <img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram">
+      <a href="/"><img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook"></a>
+      <a href="/"><img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube"></a>
+      <a href="/"><img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram"></a>
     </div>
   </ul>
 
@@ -71,7 +75,7 @@
 </footer>
  
 
-  <RouterView/>
+
 </template>
 <script>
 import MenuHamburger from './components/icons/MenuHamburger.vue'
