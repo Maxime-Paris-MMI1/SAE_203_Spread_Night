@@ -64,8 +64,7 @@
             titre="Galerie photos"
             couleur="#4C1D95"/>
 
-            <p class="font-montserrat font-normal text-xs mt-16 mb-8 ml-5 lg:hidden">Voici quelques photos du festival de quoi passer des moments magiques !</p>
-            <p class="font-montserrat font-normal text-base mt-16 mb-8 ml-5 hidden lg:flex">Voici quelques photos du festival de quoi passer des moments magiques !</p>
+            <p class="font-montserrat font-semibold text-base mt-16 mb-8 ml-5 lg:text-lg lg:font-semibold">Voici quelques photos du festival de quoi passer des moments magiques !</p>
             
             <div class="mb-[160px] w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
