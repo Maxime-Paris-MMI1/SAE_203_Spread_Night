@@ -48,10 +48,10 @@
                 <p class="font-montserrat font-normal text-xl w-[724px]">Rien de plus simple, notre festival est situé sur le point ci-dessous. Plus précisément, il se situe à 2km de chamonix ! C’est donc bien au pied des alpes que ce festival grandiose aura lieu.</p>
             </div>
             <div class="flex flex-row justify-center mt-16 lg:hidden">
-                <img src="../../public/Images/AnyConv.com__Group 9.webp" alt="Carte de France">
+                <img src="../../public/Images/AnyConv.com__Group9.webp" alt="Carte de France">
             </div>
             <div class=" hidden flex-row justify-center mt-16 lg:flex">
-                <img class="w-[400px]" src="../../public/Images/AnyConv.com__Group 9.webp" alt="Carte de France">
+                <img class="w-[400px]" src="../../public/Images/AnyConv.com__Group9.webp" alt="Carte de France">
             </div>
             <div class="justify-center flex mb-[86px]">
                 <BoutonAction
@@ -69,38 +69,38 @@
             
             <div class="mb-[160px] w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="../../public/Images/AnyConv.com__image 6.webp" alt="">
+                    <img src="../../public/Images/AnyConv.com__image6.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="../../public/Images/AnyConv.com__image 8.webp" alt="">
+                    <img src="../../public/Images/AnyConv.com__image8.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="../../public/Images/AnyConv.com__image 12.webp" alt="">
+                    <img src="../../public/Images/AnyConv.com__image12.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="../../public/Images/image+10.png.webp" alt="">
+                    <img src="../../public/Images/image10.png.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="../../public/Images/AnyConv.com__image 11.webp" alt="">
+                    <img src="../../public/Images/AnyConv.com__image11.webp" alt="">
                 </div>
             </div>
 
             <div id="carouselExampleControls" class="carousel slide relative hidden lg:flex" data-bs-ride="carousel">
                 <div class="carousel-inner relative w-full overflow-hidden pl-[30%]">
                     <div class="carousel-item active relative float-left w-full">
-                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 6.webp" alt="">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image6.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
-                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 8.webp" alt="">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image8.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
-                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 12.webp" alt="">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image12.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <img class="block w-[565px]" src="../../public/Images/image10.png.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
-                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 11.webp" alt="">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image11.webp" alt="">
                     </div>
                 </div>
                 <button
