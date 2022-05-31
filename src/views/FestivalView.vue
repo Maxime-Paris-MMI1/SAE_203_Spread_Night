@@ -128,8 +128,8 @@
 
 <script>
 import RectanglePresentation from '../components/RectanglePresentation.vue'
-import HautTriangle from '../components/Icons/HautTriangle.vue'
-import BasTriangle from '../components/Icons/BasTriangle.vue'
+import HautTriangle from '../components/icons/HautTriangle.vue'
+import BasTriangle from '../components/icons/BasTriangle.vue'
 import BoutonAction from '../components/BoutonAction.vue'
 import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/vue/solid'
 
