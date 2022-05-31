@@ -2,7 +2,7 @@
     <main>
     <div>
         <RectanglePresentation
-        titre="À propos du festival"
+        titre="Tout les artistes"
         couleur="#0C4A6E"/>
     </div>
     <div class="mx-auto w-3/4 justify-center items-center gap-7 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">

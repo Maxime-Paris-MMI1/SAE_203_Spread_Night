@@ -8,15 +8,15 @@
                 <div class="w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
                     <div class="snap-start shrink-0 first:pl-5 last:pr-5">
                         <ComposantDate class="shrink-0"
-                        couleur="#4C1D95"
-                        lien1="/programmation23"/>
+                        couleur1="#4C1D95"
+                        lien="/programmation"/>
                     </div>
                 </div>
 
                 <div class="hidden lg:flex justify-center">
                     <ComposantDate class="shrink-0"
-                    couleur="#4C1D95"
-                    lien1="/programmation23"/>
+                    couleur1="#4C1D95"
+                    lien="/programmation"/>
                 </div>
 
 
@@ -53,9 +53,9 @@
 </template>
 
 <script>
-import RectanglePresentation from '../components/RectanglePresentation.vue'
-import ComposantDate from '../components/ComposantDate.vue'
-import CarteConcert from '../components/CarteConcert.vue'
+import RectanglePresentation from '../../components/RectanglePresentation.vue'
+import ComposantDate from '../../components/ComposantDate.vue'
+import CarteConcert from '../../components/CarteConcert.vue'
 
 
 export default {
