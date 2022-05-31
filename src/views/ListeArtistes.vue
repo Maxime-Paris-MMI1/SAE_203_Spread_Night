@@ -18,7 +18,7 @@
         titrebouton="En savoir plus"
         chansonconnue="Heartbeat Loud"
         artiste="Andy C"
-        image="../../public/Images/pexels-binyamin-mellish-106399 1.png"
+        image="../../public/Images/pexels-binyamin-mellish-1063991.png"
         />
 
         <CarteArtiste

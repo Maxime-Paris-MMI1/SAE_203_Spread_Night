@@ -97,7 +97,7 @@
                         <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 12.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
-                        <img class="block w-[565px]" src="../../public/Images/image+10.png.webp" alt="">
+                        <img class="block w-[565px]" src="../../public/Images/image10.png.webp" alt="">
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 11.webp" alt="">
