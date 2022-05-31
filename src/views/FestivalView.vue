@@ -48,10 +48,10 @@
                 <p class="font-montserrat font-normal text-xl w-[724px]">Rien de plus simple, notre festival est situé sur le point ci-dessous. Plus précisément, il se situe à 2km de chamonix ! C’est donc bien au pied des alpes que ce festival grandiose aura lieu.</p>
             </div>
             <div class="flex flex-row justify-center mt-16 lg:hidden">
-                <img src="../../public\Images\AnyConv.com__Group 9.webp" alt="Carte de France">
+                <img src="../../public/Images/AnyConv.com__Group 9.webp" alt="Carte de France">
             </div>
             <div class=" hidden flex-row justify-center mt-16 lg:flex">
-                <img class="w-[400px]" src="../../public\Images\AnyConv.com__Group 9.webp" alt="Carte de France">
+                <img class="w-[400px]" src="../../public/Images/AnyConv.com__Group 9.webp" alt="Carte de France">
             </div>
             <div class="justify-center flex mb-[86px]">
                 <BoutonAction

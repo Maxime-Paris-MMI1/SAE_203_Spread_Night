@@ -3,7 +3,7 @@
   <div class="flex flex-row justify-between bg-gray-100 px-4 py-7
               lg:hidden">
 
-    <a href="/"><img src="../public\Images\Logo (1).webp" alt="logo"></a>
+    <a href="/"><img src="../public/Images/Logo (1).webp" alt="logo"></a>
     <button class="relative z-50 text-xl" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
       <div>
         <MenuHamburger :class="{'hidden' : menuOuvert}" />
@@ -29,14 +29,14 @@
 
         <div class="absolute bottom-[145px] w-full">
           <DecoFooter class=" max-h-[178px] w-full min-h-[0px]  object-cover relative z-0 -mb-36"/>
-          <img class="h-[72px] absolute z-50 mt-9 ml-4" src="../public\Images\Logo (1).webp" alt="logo">
+          <img class="h-[72px] absolute z-50 mt-9 ml-4" src="../public/Images/Logo (1).webp" alt="logo">
         </div>
 
 
         
   </div>
   <div class="hidden lg:flex justify-center gap-[25px] bg-gray-100 pb-4">
-    <a href="/"><img class="mt-5 h-10" src="../public\Images\Logo (1).webp" alt="logo"></a>
+    <a href="/"><img class="mt-5 h-10" src="../public/Images/Logo (1).webp" alt="logo"></a>
 
     <ul class=" gap-8  font-lato font-semibold text-black flex flex-row">
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/programmation"><p>Programmation</p></RouterLink></li>
@@ -58,9 +58,9 @@
     <li><RouterLink to="/contact"><p>Nous contacter</p></RouterLink></li>
     <li>Nous suivre sur les réseaux</li>
     <div class="flex flex-row justify-center gap-5 h-8 ">
-      <a href="https://www.facebook.com/"><img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook"></a>
-      <a href="https://www.youtube.com/"><img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube"></a>
-      <a href="https://www.instagram.com/"><img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram"></a>
+      <a href="https://www.facebook.com/"><img src="../public/Images/PinClipart-1.webp" alt="Logo Facebook"></a>
+      <a href="https://www.youtube.com/"><img src="../public/Images/logo-youtube-1.webp" alt="Logo Youtube"></a>
+      <a href="https://www.instagram.com/"><img src="../public/Images/logo-instagram-noir-1.webp" alt="logo Instagram"></a>
     </div>
   </ul>
 
@@ -68,9 +68,9 @@
     <li class="mt-2"><RouterLink to="/mentionslegales"><p>Mentions légales</p></RouterLink></li>
     <li class="mt-2"><RouterLink to="/contact"><p>Nous contacter</p></RouterLink></li>
     <div class="flex flex-row justify-center gap-5 h-8 ">
-      <a href="https://www.facebook.com/"><img src="../public\Images\PinClipart-1.webp" alt="Logo Facebook"></a>
-      <a href="https://www.youtube.com/"><img src="../public\Images\logo-youtube-1.webp" alt="Logo Youtube"></a>
-      <a href="https://www.instagram.com/"><img src="../public\Images\logo-instagram-noir-1.webp" alt="logo Instagram"></a>
+      <a href="https://www.facebook.com/"><img src="../public/Images/PinClipart-1.webp" alt="Logo Facebook"></a>
+      <a href="https://www.youtube.com/"><img src="../public/Images/logo-youtube-1.webp" alt="Logo Youtube"></a>
+      <a href="https://www.instagram.com/"><img src="../public/Images/logo-instagram-noir-1.webp" alt="logo Instagram"></a>
     </div>
   </ul>
 </footer>

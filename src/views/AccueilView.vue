@@ -1,7 +1,7 @@
 <template>
     <main>
         <section>
-            <img class="h-[783px] max-h-[783px] min-h-[783px] w-full object-cover absolute" src="../../public\Images\pexels-pixabay-358528-1.webp" alt="montagne nuit">
+            <img class="h-[783px] max-h-[783px] min-h-[783px] w-full object-cover absolute" src="../../public/Images/pexels-pixabay-358528-1.webp" alt="montagne nuit">
             <div class="relative z-40 text-center pt-[185px] text-white">
                 <h1 class="font-lato font-medium text-2xl pb-8">Spread Night </h1>
                 <div class="font-montserrat font-normal text-base">
@@ -31,15 +31,15 @@
                     <div class="relative z-[49] justify-around mt-14 hidden lg:flex" >
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="../../public\Images\Rectangle-2-1.webp"/>
+                        image="../../public/Images/Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
                         titre="Netsky"
-                        image="../../public\Images\Rectangle+2.png.webp"/>
+                        image="../../public/Images/Rectangle+2.png.webp"/>
 
                         <ComposantArtiste
                         titre="Sub Focus"
-                        image="../../public\Images\Rectangle-2-2.webp"/>
+                        image="../../public/Images/Rectangle-2-2.webp"/>
                     </div>
 
                     <div class=" justify-center  lg:hidden">
@@ -48,15 +48,15 @@
                     <div class="relative z-[49] flex flex-col gap-14 items-center mt-14 lg:hidden">
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="../../public\Images\Rectangle-2-1.webp"/>
+                        image="../../public/Images/Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
                         titre="Netsky"
-                        image="../../public\Images\Rectangle+2.png.webp"/>
+                        image="../../public/Images/Rectangle+2.png.webp"/>
 
                         <ComposantArtiste
                         titre="Sub Focus"
-                        image="../../public\Images\Rectangle-2-2.webp"/>
+                        image="../../public/Images/Rectangle-2-2.webp"/>
                     </div>
 
 
