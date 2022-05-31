@@ -68,19 +68,19 @@
             
             <div class="mb-[160px] w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="/public/Images/AnyConv.com__image6.webp" alt="">
+                    <img class="shrink-0" src="/public/Images/AnyConv.com__image6.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
                     <img src="/public/Images/AnyConv.com__image8.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="/public/Images/AnyConv.com__image12.webp" alt="">
+                    <img class="shrink-0" src="/public/Images/AnyConv.com__image12.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="/public/Images/image10.png.webp" alt="">
+                    <img class="shrink-0" src="/public/Images/image10.png.webp" alt="">
                 </div>
                 <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-                    <img src="/public/Images/AnyConv.com__image11.webp" alt="">
+                    <img class="shrink-0" src="/public/Images/AnyConv.com__image11.webp" alt="">
                 </div>
             </div>
 
