@@ -59,7 +59,7 @@
                 lien="/contact"/>
             </div>
         </section>
-        <section>
+        <section class="mb-24">
             <RectanglePresentation
             titre="Galerie photos"
             couleur="#4C1D95"/>
