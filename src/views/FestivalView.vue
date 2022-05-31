@@ -84,6 +84,44 @@
                     <img src="../../public/Images/AnyConv.com__image 11.webp" alt="">
                 </div>
             </div>
+
+            <div id="carouselExampleControls" class="carousel slide relative hidden lg:flex" data-bs-ride="carousel">
+                <div class="carousel-inner relative w-full overflow-hidden pl-[30%]">
+                    <div class="carousel-item active relative float-left w-full">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 6.webp" alt="">
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 8.webp" alt="">
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 12.webp" alt="">
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img class="block w-[565px]" src="../../public/Images/image+10.png.webp" alt="">
+                    </div>
+                    <div class="carousel-item relative float-left w-full">
+                        <img class="block w-[565px]" src="../../public/Images/AnyConv.com__image 11.webp" alt="">
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                >
+                    <ChevronLeftIcon class="text-[#0C4A6E] w-16" aria-hidden="true"/>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                >
+                    <ChevronRightIcon class="text-[#0C4A6E] w-16" aria-hidden="true"/>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
 </template>
@@ -93,10 +131,11 @@ import RectanglePresentation from '../components/RectanglePresentation.vue'
 import HautTriangle from '../components/Icons/HautTriangle.vue'
 import BasTriangle from '../components/Icons/BasTriangle.vue'
 import BoutonAction from '../components/BoutonAction.vue'
+import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/vue/solid'
 
 export default {
     name:"Accueil",
-    components:{RectanglePresentation, HautTriangle, BasTriangle, BoutonAction}
+    components:{RectanglePresentation, HautTriangle, BasTriangle, BoutonAction, ChevronLeftIcon, ChevronRightIcon}
 
 }
 </script>
