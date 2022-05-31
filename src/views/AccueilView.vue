@@ -35,7 +35,7 @@
 
                         <ComposantArtiste
                         titre="Netsky"
-                        image="../../public/Images/Rectangle+2.png.webp"/>
+                        image="../../public/Images/Rectangle2.png.webp"/>
 
                         <ComposantArtiste
                         titre="Sub Focus"
