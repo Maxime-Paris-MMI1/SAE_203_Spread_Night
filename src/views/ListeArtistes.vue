@@ -5,7 +5,7 @@
         titre="À propos du festival"
         couleur="#0C4A6E"/>
     </div>
-    <div class="mx-auto w-11/12 justify-center items-center gap-7 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+    <div class="mx-auto w-3/4 justify-center items-center gap-7 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
         <CarteArtiste class="mb-16"
         titrebouton="En savoir plus"
         chansonconnue="Animals"

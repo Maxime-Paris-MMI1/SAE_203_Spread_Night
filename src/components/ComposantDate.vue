@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-row flex gap-0 mt-10 mb-32">
+    <div class="flex-row flex gap-0 mt-10 mb-14">
             <svg
           width="153"
           height="96"
@@ -13,7 +13,7 @@
             stroke="none"
           ></path>
         </svg>
-        <div class="font-lato text-lg font-semibold -ml-32 mr-[13px] mt-8 text-white relative z-50">
+        <div class="font-lato text-lg font-semibold -ml-32 mr-[13px] mt-8 text-white relative ">
             Samedi 22/10 
         </div>
 
@@ -23,7 +23,7 @@
               width="153"
               height="96"
               viewBox="0 0 153 96"
-              :fill="couleur"
+              :fill="couleur1"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
             >
@@ -32,7 +32,7 @@
                 stroke="none"
               ></path>
             </svg>
-            <div class="font-lato text-lg font-semibold  mr-[10px] -mt-[60px] ml-3 text-white relative z-50">
+            <div class="font-lato text-lg font-semibold  mr-[10px] -mt-[60px] ml-3 text-white relative ">
                 Dimanche 23/10 
             </div>
         </div>
@@ -42,7 +42,7 @@
           width="153"
           height="96"
           viewBox="0 0 153 96"
-          :fill="couleur"
+          :fill="couleur2"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
         >
@@ -52,13 +52,9 @@
           ></path>
         </svg>
         </div>
-        <div class="font-lato text-lg font-semibold -ml-32 mr-[10px] mt-10 text-white relative z-50">
+        <div class="font-lato text-lg font-semibold -ml-32 mr-[10px] mt-10 text-white relative ">
             Lundi 24/10
         </div>
-
-
-        
-        
         
         <div class="mt-[90px]">
             <div class="mt-2 ml-3">
@@ -66,7 +62,7 @@
               width="153"
               height="96"
               viewBox="0 0 153 96"
-              :fill="couleur"
+              :fill="couleur3"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
             >
@@ -78,7 +74,7 @@
 
             </div>
             
-            <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative z-50">
+            <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative ">
                 Mardi 25/10
             </div>
         </div>
@@ -89,7 +85,7 @@
           width="153"
           height="96"
           viewBox="0 0 153 96"
-          :fill="couleur"
+          :fill="couleur4"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none">
           <path
@@ -98,7 +94,7 @@
           ></path>
         </svg>
         </div>
-        <div class="font-lato text-lg font-semibold -ml-[140px] mr-[10px] mt-12 text-white relative z-50">
+        <div class="font-lato text-lg font-semibold -ml-[140px] mr-[10px] mt-12 text-white relative ">
             Mercredi 26/10
         </div>
         
@@ -109,7 +105,7 @@
               width="153"
               height="96"
               viewBox="0 0 153 96"
-              :fill="couleur"
+              :fill="couleur5"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
             >
@@ -118,7 +114,7 @@
                 stroke="none"
               ></path>
             </svg>
-            <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative z-50">
+            <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative ">
                 jeudi 27/10
             </div>
         </div>
@@ -128,7 +124,7 @@
           width="153"
           height="96"
           viewBox="0 0 153 96"
-          :fill="couleur"
+          :fill="couleur6"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
         >
@@ -137,7 +133,7 @@
             stroke="none"
           ></path>
         </svg>
-        <div class="font-lato text-lg font-semibold -mt-16 ml-3 text-white relative z-50">
+        <div class="font-lato text-lg font-semibold -mt-16 ml-3 text-white relative ">
             Vendredi 28/10
         </div>
 
@@ -148,7 +144,7 @@
           width="153"
           height="96"
           viewBox="0 0 153 96"
-          :fill="couleur"
+          :fill="couleur7"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
         >
@@ -157,7 +153,7 @@
             stroke="none"
           ></path>
         </svg>
-        <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative z-50">
+        <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative ">
             Samedi 29/10
         </div>
         </div>
@@ -174,7 +170,41 @@ export default {
             type: String,
             default: '#0369A1'
         },
-        
+
+        couleur1:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur2:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur3:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur4:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur5:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur6:{
+            type: String,
+            default: '#0369A1'
+        },
+
+        couleur7:{
+            type: String,
+            default: '#0369A1'
+        }, 
     },
 }
 </script>
