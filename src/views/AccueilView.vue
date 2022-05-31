@@ -28,15 +28,18 @@
                     <div class=" justify-center hidden lg:flex">
                     <p class="relative z-[49] pt-40 font-lato text-2xl font-medium text-white"> Les artistes à l’affiche </p>
                     </div>
-                    <div class="relative z-[49] justify-around mt-14 hidden lg:flex">
+                    <div class="relative z-[49] justify-around mt-14 hidden lg:flex" >
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Martin Garrix"
+                        image="../../public\Images\Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Netsky"
+                        image="../../public\Images\Rectangle+2.png.webp"/>
 
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Sub Focus"
+                        image="../../public\Images\Rectangle-2-2.webp"/>
                     </div>
 
                     <div class=" justify-center  lg:hidden">
@@ -44,13 +47,16 @@
                     </div>
                     <div class="relative z-[49] flex flex-col gap-14 items-center mt-14 lg:hidden">
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Martin Garrix"
+                        image="../../public\Images\Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Netsky"
+                        image="../../public\Images\Rectangle+2.png.webp"/>
 
                         <ComposantArtiste
-                        titre="Martin Garrix"/>
+                        titre="Sub Focus"
+                        image="../../public\Images\Rectangle-2-2.webp"/>
                     </div>
 
 
@@ -70,7 +76,7 @@
                 </RouterLink> 
             </div>
         </section>
-        <section class="flex flex-row justify-center -mt-10">
+        <section class="flex flex-row justify-center -mt-10 lg:hidden">
             <div>
                 <HautTriangle/>
                 <p class="w-[343px] pb-6 font-montserrat font-normal text-xs"> Bienvenue sur le site du festival Spread Night !
@@ -80,6 +86,19 @@
                 <p class="w-[343px] font-montserrat font-normal text-xs">Alors n’attendez plus, réservez vos tickets !</p>
                 <div class="flex flex-row justify-center">
                     <BasTriangle/>
+                </div>
+            </div>
+        </section>
+        <section class=" flex-row justify-center -mt-10 hidden lg:flex">
+            <div>
+                <HautTriangle class="w-[443px]"/>
+                <p class="w-[440px] pb-6 font-montserrat font-normal text-lg"> Bienvenue sur le site du festival Spread Night !
+                    Ce festival aura lieu pendant 7 jours au coeur des montagnes des alpes pas loin de chamonix !
+                </p>
+                <p class="w-[440px] pb-6 font-montserrat font-normal text-lg">De nombreux artistes seront présents comme Martin Garrix ou encore Netsky. Il y a tout pour passer de bonnes soirées en compagnies de vos amis ou encore de votre famille de quoi créer des moments inoubliables.</p>
+                <p class="w-[440px] font-montserrat font-normal text-lg">Alors n’attendez plus, réservez vos tickets !</p>
+                <div class="flex flex-row justify-center">
+                    <BasTriangle class="w-[97px]"/>
                 </div>
             </div>
         </section>
