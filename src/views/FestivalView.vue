@@ -66,6 +66,24 @@
 
             <p class="font-montserrat font-normal text-xs mt-16 mb-8 ml-5 lg:hidden">Voici quelques photos du festival de quoi passer des moments magiques !</p>
             <p class="font-montserrat font-normal text-base mt-16 mb-8 ml-5 hidden lg:flex">Voici quelques photos du festival de quoi passer des moments magiques !</p>
+            
+            <div class="mb-[160px] w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
+                <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+                    <img src="../../public/Images/AnyConv.com__image 6.webp" alt="">
+                </div>
+                <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+                    <img src="../../public/Images/AnyConv.com__image 8.webp" alt="">
+                </div>
+                <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+                    <img src="../../public/Images/AnyConv.com__image 12.webp" alt="">
+                </div>
+                <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+                    <img src="../../public/Images/image+10.png.webp" alt="">
+                </div>
+                <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+                    <img src="../../public/Images/AnyConv.com__image 11.webp" alt="">
+                </div>
+            </div>
         </section>
     </main>
 </template>
