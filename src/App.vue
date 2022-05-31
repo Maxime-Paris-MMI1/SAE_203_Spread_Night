@@ -29,7 +29,7 @@
 
         <div class="absolute bottom-[145px] w-full">
           <DecoFooter class=" max-h-[178px] w-full min-h-[0px]  object-cover relative z-0 -mb-36"/>
-          <img class="h-[72px] absolute z-50 mt-9 ml-4" src="../public/Images/Logo (1).webp" alt="logo">
+          <img class="h-[72px] absolute z-50 mt-9 ml-4" src="../public/Images/Logo.webp" alt="logo">
         </div>
 
 
