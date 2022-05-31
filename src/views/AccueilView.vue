@@ -14,11 +14,11 @@
                     lien="./contact"/>
                 </div>
                 <div class="flex justify-center mt-[245px]">
-                    <button class="motion-safe:scroll-smooth">
+                    <!-- <button class="motion-safe:scroll-smooth">
                         <a href="#down">
                             <DropDown class="motion-safe:animate-bounce"/>
                         </a>
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </section>
@@ -114,7 +114,7 @@
 <script>
 
 import BoutonAction from '../components/BoutonAction.vue'
-import DropDown from '../components/Icons/DropDown.vue'
+// import DropDown from '../components/Icons/DropDown.vue'
 import VagueAccueil from '../components/Icons/VagueAccueil.vue'
 import ComposantArtiste from '../components/ComposantArtiste.vue'
 import HautTriangle from '../components/Icons/HautTriangle.vue'
@@ -122,6 +122,6 @@ import BasTriangle from '../components/Icons/BasTriangle.vue'
 
 export default {
   name: "Accueil",
-  components: {BoutonAction, DropDown, VagueAccueil, ComposantArtiste, HautTriangle, BasTriangle},
+  components: {BoutonAction, VagueAccueil, ComposantArtiste, HautTriangle, BasTriangle},
 }
 </script>
