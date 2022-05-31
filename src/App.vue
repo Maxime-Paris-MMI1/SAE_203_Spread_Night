@@ -3,7 +3,7 @@
   <div class="flex flex-row justify-between bg-gray-100 px-4 py-7
               lg:hidden">
 
-    <a href="/"><img src="../public/Images/Logo (1).webp" alt="logo"></a>
+    <a href="/"><img src="../public/Images/Logo.webp" alt="logo"></a>
     <button class="relative z-50 text-xl" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
       <div>
         <MenuHamburger :class="{'hidden' : menuOuvert}" />
@@ -36,7 +36,7 @@
         
   </div>
   <div class="hidden lg:flex justify-center gap-[25px] bg-gray-100 pb-4">
-    <a href="/"><img class="mt-5 h-10" src="../public/Images/Logo (1).webp" alt="logo"></a>
+    <a href="/"><img class="mt-5 h-10" src="../public/Images/Logo.webp" alt="logo"></a>
 
     <ul class=" gap-8  font-lato font-semibold text-black flex flex-row">
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/programmation"><p>Programmation</p></RouterLink></li>
