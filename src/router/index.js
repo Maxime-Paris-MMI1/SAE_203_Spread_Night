@@ -12,6 +12,7 @@ import {
   where
 } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
 
+import 'tw-elements';
 
 import accueil    from      '../views/AccueilView.vue'
 import contact   from      '../views/ContactView.vue'
