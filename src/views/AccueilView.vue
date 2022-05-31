@@ -31,15 +31,15 @@
                     <div class="relative z-[49] justify-around mt-14 hidden lg:flex" >
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="/public/Images/Rectangle-2-1.webp"/>
+                        image="/Images/Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
                         titre="Netsky"
-                        image="/public/Images/Rectangle2.png.webp"/>
+                        image="/Images/Rectangle2.png.webp"/>
 
                         <ComposantArtiste
                         titre="Sub Focus"
-                        image="/public/Images/Rectangle-2-2.webp"/>
+                        image="/Images/Rectangle-2-2.webp"/>
                     </div>
 
                     <div class=" justify-center  lg:hidden">
@@ -48,15 +48,15 @@
                     <div class="relative z-[49] flex flex-col gap-14 items-center mt-14 lg:hidden">
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="/public/Images/Rectangle-2-1.webp"/>
+                        image="/Images/Rectangle-2-1.webp"/>
 
                         <ComposantArtiste
                         titre="Netsky"
-                        image="/public/Images/Rectangle2.png.webp"/>
+                        image="/Images/Rectangle2.png.webp"/>
 
                         <ComposantArtiste
                         titre="Sub Focus"
-                        image="/public/Images/Rectangle-2-2.webp"/>
+                        image="/Images/Rectangle-2-2.webp"/>
                     </div>
 
 

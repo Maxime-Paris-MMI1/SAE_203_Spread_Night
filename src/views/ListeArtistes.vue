@@ -18,21 +18,21 @@
         titrebouton="En savoir plus"
         chansonconnue="Heartbeat Loud"
         artiste="Andy C"
-        image="/public/Images/pexels-binyamin-mellish-1063991.png"
+        image="/Images/pexels-binyamin-mellish-1063991.png"
         />
 
         <CarteArtiste
         titrebouton="En savoir plus"
         chansonconnue="Animals"
         artiste="Martin garrix"
-        image="/public/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
+        image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
         />
 
         <CarteArtiste
         titrebouton="En savoir plus"
         chansonconnue="Animals"
         artiste="Martin garrix"
-        image="/public/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
+        image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
         />
 
     </main>
