@@ -54,7 +54,7 @@
                     <img src="/Images/AnyConv.com__image6.webp" alt="Photo concert">
                 </div>
                 <div class="snap-start shrink-0 first:pl-5 last:pr-5">
-                    <img src="/Images/pexels-wendy-wei-1540406 2.webp" alt="Photo concert">
+                    <img src="/Images/pexels-wendy-wei-15404062.webp" alt="Photo concert">
                 </div>
             </div>
         </div>
