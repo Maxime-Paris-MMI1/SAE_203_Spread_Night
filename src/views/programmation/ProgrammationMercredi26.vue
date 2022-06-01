@@ -43,7 +43,8 @@
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
                 artiste="Martin Garrix"
-                image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"/>
+                image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
+                lien="/concertmartingarrix"/>
                 <!-- obligation d'avoir cet artiste au dessus -->
                 
                 <CarteConcert
