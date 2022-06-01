@@ -9,19 +9,31 @@
                     <div class="snap-start shrink-0 first:pl-5 last:pr-5">
                         <ComposantDate class="shrink-0"
                         couleur1="#4C1D95"
-                        lien="/programmation"/>
+                        lien="/programmation"
+                        lien2="/programmation24"
+                        lien3="/programmation25"
+                        lien4="/programmation26"
+                        lien5="/programmation27"
+                        lien6="/programmation28"
+                        lien7="/programmation29"/>
                     </div>
                 </div>
 
                 <div class="hidden lg:flex justify-center">
                     <ComposantDate class="shrink-0"
                     couleur1="#4C1D95"
-                    lien="/programmation"/>
+                    lien="/programmation"
+                    lien2="/programmation24"
+                    lien3="/programmation25"
+                    lien4="/programmation26"
+                    lien5="/programmation27"
+                    lien6="/programmation28"
+                    lien7="/programmation29"/>
                 </div>
 
 
             <RectanglePresentation
-            titre="Samedi 22/10"
+            titre="Dimanche 23/10"
             couleur="#4C1D95"/>
         </section>
         <section>
@@ -30,23 +42,23 @@
             <div class="mx-auto w-11/12 justify-center items-center gap-20 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] ">
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="Martin Garrix"
-                image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"/>
+                artiste="Sub Focus"
+                image="/Images/benjamin.webp"/>
 
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="Kanine"
-                image="/Images/artiste_4.webp"/>
+                artiste="Black Sun Empire"
+                image="/Images/artiste_16.webp"/>
 
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="High Contrast"
-                image="/Images/artiste_13.webp"/>
+                artiste="Camo & Krooked"
+                image="/Images/artiste_9.webp"/>
 
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="Nero"
-                image="/Images/artiste_7.webp"/>
+                artiste="Netsky"
+                image="/Images/Netsky_(DJ).webp"/>
             </div>
         </section>
     </main>

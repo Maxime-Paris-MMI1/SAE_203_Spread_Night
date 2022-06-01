@@ -21,6 +21,12 @@ import artistes    from      '../views/ListeArtistes.vue'
 import mentionslegales   from      '../views/MentionsLegales.vue'
 import programmation    from      '../views/ProgrammationView.vue'
 import programmation23    from      '../views/programmation/ProgrammationDimanche23.vue'
+import programmation24    from      '../views/programmation/ProgrammationLundi24.vue'
+import programmation25    from      '../views/programmation/ProgrammationMardi25.vue'
+import programmation26    from      '../views/programmation/ProgrammationMercredi26.vue'
+import programmation27    from      '../views/programmation/ProgrammationJeudi27.vue'
+import programmation28    from      '../views/programmation/ProgrammationVendredi28.vue'
+import programmation29    from      '../views/programmation/ProgrammationSamedi29.vue'
 import View404   from      '../views/View404.vue'
 
 const router = createRouter({
@@ -33,6 +39,12 @@ const router = createRouter({
     { path: '/mentionslegales',                        name: 'mentionslegales',         component: mentionslegales  },
     { path: '/programmation',                        name: 'programmation',         component: programmation  },
     { path: '/programmation23',                        name: 'programmation23',         component: programmation23  },
+    { path: '/programmation24',                        name: 'programmation24',         component: programmation24  },
+    { path: '/programmation25',                        name: 'programmation25',         component: programmation25  },
+    { path: '/programmation26',                        name: 'programmation26',         component: programmation26  },
+    { path: '/programmation27',                        name: 'programmation27',         component: programmation27  },
+    { path: '/programmation28',                        name: 'programmation28',         component: programmation28  },
+    { path: '/programmation29',                        name: 'programmation29',         component: programmation29  },
     { path: '/:pathMatch(.*)*', name: 'View404', component: View404 },
   ]
 })

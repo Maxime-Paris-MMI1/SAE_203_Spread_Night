@@ -14,7 +14,7 @@
               stroke="none"
             ></path>
           </svg>
-          <div class="font-lato text-lg font-semibold -ml-32 mr-[13px] mt-8 text-white relative ">
+          <div class="font-lato text-lg font-semibold -mt-[60px] ml-5 text-white relative ">
               Samedi 22/10 
           </div>
         </RouterLink>
@@ -57,13 +57,13 @@
             ></path>
           </svg>
           </div>
-          <div class="font-lato text-lg font-semibold -ml-32 mr-[10px] mt-10 text-white relative ">
+          <div class="font-lato text-lg font-semibold -mt-[60px] -ml-5 text-white relative ">
               Lundi 24/10
           </div>
         </RouterLink>
         
         <RouterLink :to="lien3">
-          <div class="mt-[90px]">
+          <div class="mt-[100px] -ml-4">
               <div class="mt-2 ml-3">
                   <svg
                 width="153"
@@ -81,7 +81,7 @@
 
               </div>
 
-              <div class="font-lato text-lg font-semibold ml-7 -mt-[65px] text-white relative ">
+              <div class="font-lato text-lg font-semibold ml-9 -mt-[60px] text-white relative ">
                   Mardi 25/10
               </div>
           </div>
@@ -102,7 +102,7 @@
             ></path>
           </svg>
           </div>
-          <div class="font-lato text-lg font-semibold -ml-[140px] mr-[10px] mt-12 text-white relative ">
+          <div class="font-lato text-lg font-semibold -ml-[33px]  -mt-[60px] text-white relative ">
               Mercredi 26/10
           </div>
         </RouterLink>

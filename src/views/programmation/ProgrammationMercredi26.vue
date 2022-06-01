@@ -8,34 +8,32 @@
                 <div class="w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
                     <div class="snap-start shrink-0 first:pl-5 last:pr-5">
                         <ComposantDate class="shrink-0"
-                        couleur="#4C1D95"
-                            lien="/programmation"
-                            lien1="/programmation23"
-                            lien2="/programmation24"
-                            lien3="/programmation25"
-                            lien4="/programmation26"
-                            lien5="/programmation27"
-                            lien6="/programmation28"
-                            lien7="/programmation29"/>
+                        couleur4="#4C1D95"
+                        lien="/programmation"
+                        lien1="/programmation23"
+                        lien2="/programmation24"
+                        lien3="/programmation25"
+                        lien5="/programmation27"
+                        lien6="/programmation28"
+                        lien7="/programmation29"/>
                     </div>
                 </div>
 
                 <div class="hidden lg:flex justify-center">
                     <ComposantDate class="shrink-0"
-                    couleur="#4C1D95"
-                        lien="/programmation"
-                        lien1="/programmation23"
-                        lien2="/programmation24"
-                        lien3="/programmation25"
-                        lien4="/programmation26"
-                        lien5="/programmation27"
-                        lien6="/programmation28"
-                        lien7="/programmation29"/>
+                    couleur4="#4C1D95"
+                    lien="/programmation"
+                    lien1="/programmation23"
+                    lien2="/programmation24"
+                    lien3="/programmation25"
+                    lien5="/programmation27"
+                    lien6="/programmation28"
+                    lien7="/programmation29"/>
                 </div>
 
 
             <RectanglePresentation
-            titre="Samedi 22/10"
+            titre="Mercredi 26/10"
             couleur="#4C1D95"/>
         </section>
         <section>
@@ -46,30 +44,31 @@
                 titrebouton="Voir les horaires et le lieu"
                 artiste="Martin Garrix"
                 image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"/>
+                <!-- obligation d'avoir cet artiste au dessus -->
+                
+                <CarteConcert
+                titrebouton="Voir les horaires et le lieu"
+                artiste="Aphrodite"
+                image="/Images/image_card_artiste_vert.png"/>
 
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="Kanine"
-                image="/Images/artiste_4.webp"/>
+                artiste="Andy C"
+                image="/Images/pexels-binyamin-mellish-1063991.png"/>
 
                 <CarteConcert
                 titrebouton="Voir les horaires et le lieu"
-                artiste="High Contrast"
-                image="/Images/artiste_13.webp"/>
-
-                <CarteConcert
-                titrebouton="Voir les horaires et le lieu"
-                artiste="Nero"
-                image="/Images/artiste_7.webp"/>
+                artiste="Noisia"
+                image="/Images/artiste_2.webp"/>
             </div>
         </section>
     </main>
 </template>
 
 <script>
-import RectanglePresentation from '../components/RectanglePresentation.vue'
-import ComposantDate from '../components/ComposantDate.vue'
-import CarteConcert from '../components/CarteConcert.vue'
+import RectanglePresentation from '../../components/RectanglePresentation.vue'
+import ComposantDate from '../../components/ComposantDate.vue'
+import CarteConcert from '../../components/CarteConcert.vue'
 
 
 export default {
