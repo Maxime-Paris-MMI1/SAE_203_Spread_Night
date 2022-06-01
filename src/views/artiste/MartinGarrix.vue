@@ -26,7 +26,7 @@
         </div>
         <div class="my-16 ml-1 justify-center items-center gap-7 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:ml-5 ">
             <div class="flex flex-row">
-                <img class="max-h-40" src="public/Images/AnyConv.com__image2.webp" alt="">
+                <img class="max-h-40" src="/Images/AnyConv.com__image2.webp" alt="">
                 <div class="w-[150px] flex-col pl-2 bg-[#E2E8F0]">
                     <p class="font-lato text-2xl mb-3">1</p> <br/>
                     <p class="-mt-10 font-lato font-semibold">Animals</p> <br/>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="flex flex-row">
-                <img class="max-h-40" src="public/Images/AnyConv.com__image3.webp" alt="">
+                <img class="max-h-40" src="/Images/AnyConv.com__image3.webp" alt="">
                 <div class="w-[150px] flex-col pl-2 bg-[#E2E8F0]">
                     <p class="font-lato text-2xl mb-3">2</p> <br/>
                     <p class="-mt-10 font-lato font-semibold">Don’t Look Down</p> <br/>
