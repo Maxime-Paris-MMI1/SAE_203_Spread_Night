@@ -31,7 +31,7 @@
       </div>
 
       <div >
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81403.38137083247!2d6.841486169009612!3d45.90706401679912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894ec98e061181%3A0x7753a53db26fea54!2sAiguille%20du%20Gr%C3%A9pon!5e0!3m2!1sfr!2sfr!4v1654087135642!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="w-full object-cover" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81403.38137083247!2d6.841486169009612!3d45.90706401679912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894ec98e061181%3A0x7753a53db26fea54!2sAiguille%20du%20Gr%C3%A9pon!5e0!3m2!1sfr!2sfr!4v1654087135642!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 </template>
 
