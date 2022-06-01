@@ -49,7 +49,8 @@
                     <div class="relative z-[49] flex flex-col gap-14 items-center mt-14 lg:hidden">
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="/Images/Rectangle-2-1.webp"/>
+                        image="/Images/Rectangle-2-1.webp"
+                        lien="/martingarrix"/>
 
                         <ComposantArtiste
                         titre="Netsky"

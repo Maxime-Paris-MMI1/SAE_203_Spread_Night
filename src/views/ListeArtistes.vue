@@ -11,6 +11,7 @@
         chansonconnue="Animals"
         artiste="Martin Garrix"
         image="/Images/medias_2019_07_martin-garrix_5d2319d26058b.webp"
+        lien="/martingarrix"
         />
 
         <CarteArtiste class="mb-16"
