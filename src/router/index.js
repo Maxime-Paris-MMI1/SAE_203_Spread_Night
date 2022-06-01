@@ -27,6 +27,8 @@ import programmation26    from      '../views/programmation/ProgrammationMercred
 import programmation27    from      '../views/programmation/ProgrammationJeudi27.vue'
 import programmation28    from      '../views/programmation/ProgrammationVendredi28.vue'
 import programmation29    from      '../views/programmation/ProgrammationSamedi29.vue'
+import concertmartingarrix   from      '../views/concert/ConcertMartingarrix.vue'
+import martingarrix  from      '../views/artiste/MartinGarrix.vue'
 import View404   from      '../views/View404.vue'
 
 const router = createRouter({
@@ -45,6 +47,8 @@ const router = createRouter({
     { path: '/programmation27',                        name: 'programmation27',         component: programmation27  },
     { path: '/programmation28',                        name: 'programmation28',         component: programmation28  },
     { path: '/programmation29',                        name: 'programmation29',         component: programmation29  },
+    { path: '/concertmartingarrix',                        name: 'concertmartingarrix',         component: concertmartingarrix  },
+    { path: '/martingarrix',                        name: 'martingarrix',         component: martingarrix  },
     { path: '/:pathMatch(.*)*', name: 'View404', component: View404 },
   ]
 })

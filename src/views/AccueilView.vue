@@ -31,7 +31,8 @@
                     <div class="relative z-[49] justify-around mt-14 hidden lg:flex" >
                         <ComposantArtiste
                         titre="Martin Garrix"
-                        image="/Images/Rectangle-2-1.webp"/>
+                        image="/Images/Rectangle-2-1.webp"
+                        lien="/martingarrix"/>
 
                         <ComposantArtiste
                         titre="Netsky"
