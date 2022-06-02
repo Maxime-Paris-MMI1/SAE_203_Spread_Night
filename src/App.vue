@@ -56,17 +56,22 @@
       <div class="hidden lg:flex" v-if="isAdmin">
               <MenuDown class="mt-4"/>
       </div>
-
-      
     </ul>
   </div>
 </header>
 
-<p class="hidden lg:flex" v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
+<div class="bg-violet-100 hidden lg:flex">
+    <p v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
+</div>
 
-<div class="flex flex-col justify-center bg-violet-100 py-10 lg:hidden" v-if="isAdmin">
-  <p class="lg:hidden" v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
-  <MenuDown class="mt-4"/>
+
+<div class="flex flex-col justify-center ">
+  <div class="bg-violet-100 lg:hidden">
+    <p v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
+  </div>
+  <div v-if="isAdmin" class="lg:hidden flex justify-center">
+    <MenuDown class="mt-4"/>
+  </div>
 </div>
 
   <RouterView/>
