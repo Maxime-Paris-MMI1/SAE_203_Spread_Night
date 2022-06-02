@@ -4,7 +4,7 @@ import router from './router'
 import './index.css'
 
 // Import de mitt
-
+import mitt from 'mitt';
 
 // Import fonction d'initialisation du SDK Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";

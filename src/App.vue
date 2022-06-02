@@ -56,7 +56,6 @@
     </ul>
   </div>
 </header>
-
   <RouterView/>
 
 <footer>
@@ -103,7 +102,7 @@ export default {
   },
   beforeMount(){
     this.$router.afterEach(() => (this.menuOuvert = false));
-  }
+  },
 
 }
 </script>

@@ -3,15 +3,14 @@
         <div>
             <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
             <fieldset class="contents">
-              <legend class="my-1 border-b-2 col-span-full">Se connecter</legend>
+              <legend class="my-1  col-span-full text-3xl font-lato text-center">Connection</legend>
               <label >Email :</label>
-              <input type="email" class="rounded-sm border-2 text-black"  v-model="user.email" required>
+              <input type="email" class="rounded-sm border-2 text-black font-montserrat"  v-model="user.email" required>
               <label >Password : </label>
-              <input class="rounded-sm border-2 text-black" type="password" v-model="user.password" required/>
+              <input class="rounded-sm border-2 text-black font-montserrat" type="password" v-model="user.password" required/>
              
-                  <button type="submit">Se Connecter</button>
-                  <button type="button" @click="onDcnx()">Se Déconnecter</button>
-             
+                  <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800 hover:font-bold hover:-translate-y-1" type="submit">Se Connecter</button>
+                  <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800 hover:font-bold hover:-translate-y-1" type="button" @click="onDcnx()">Se Déconnecter</button>
              
             </fieldset>
           </form>
