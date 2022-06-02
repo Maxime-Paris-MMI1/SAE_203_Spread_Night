@@ -1,20 +1,21 @@
 <template>
-    <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 gap-20 relative ">
+    <!-- <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 relative "> -->
         <div>
-            <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1" @submit.prevent="onCnx">
+            <h2 class="my-1 col-span-full text-3xl font-lato text-center">Connection</h2>
+            <form class="grid grid-cols-[minmax(5rem,8rem)_minmax(5rem,35rem)] mx-3 gap-1" @submit.prevent="onCnx">
+
             <fieldset class="contents">
-              <legend class="my-1  col-span-full text-3xl font-lato text-center">Connection</legend>
               <label >Email :</label>
               <input type="email" class="rounded-sm border-2 text-black font-montserrat"  v-model="user.email" required>
               <label >Password : </label>
-              <input class="rounded-sm border-2 text-black font-montserrat" type="password" v-model="user.password" required/>
-             
-                  <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800 hover:font-bold hover:-translate-y-1" type="submit">Se Connecter</button>
-                  <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800 hover:font-bold hover:-translate-y-1" type="button" @click="onDcnx()">Se Déconnecter</button>
-             
+              <input class="rounded-sm border-2 text-black font-montserrat" type="password" v-model="user.password" required/>  
             </fieldset>
-          </form>
-          <p class="w-full text-center py-3 bg-yellow-100 rounded-sm mt-5 text-black">{{message}}</p>
+            </form>
+            <div class="flex justify-center gap-5 mt-10" @submit.prevent="onCnx">
+                <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="submit" @click="onCnx()">Se Connecter</button>
+                <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="button" @click="onDcnx()">Se Déconnecter</button>
+            </div>
+          <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
         </div>
         <div>
             <p>Exemple compte admin :</p>
@@ -24,7 +25,7 @@
             <p class="pl-5">email : testnonadmin@gmail.com</p>
             <p class="pl-5">mdp : 123456</p>
         </div>
-    </div>
+    <!-- </div> -->
 </template>
  
 <script>
