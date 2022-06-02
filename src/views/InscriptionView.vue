@@ -45,7 +45,8 @@ import {
     deleteDoc,      // Supprimer un document d'une collection
     onSnapshot,     // Demander une liste de documents d'une collection, en les synchronisant
     query,          // Permet d'effectuer des requêtes sur Firestore
-    orderBy         // Permet de demander le tri d'une requête query
+    orderBy,        // Permet de demander le tri d'une requête query
+    where
     } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
 import {
     getAuth,
@@ -54,6 +55,8 @@ import {
     onAuthStateChanged,
     createUserWithEmailAndPassword
 } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js'
+
+
 export default {
     data(){
         return{
@@ -119,6 +122,7 @@ export default {
                     const docRef = addDoc(dbUser,{
                         uid: uid,
                         admin: false,
+                        connecte: true,
                         login: this.user.login
                 })
                 console.log('document créé avec le id : ', docRef.id);
