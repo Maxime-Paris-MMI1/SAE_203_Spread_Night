@@ -69,7 +69,7 @@
         "
         aria-labelledby="dropdownMenuButton1"
       >
-        <RouterLink to="/">
+        <RouterLink to="/artisteadmin">
         <li>
           <a
             class="
@@ -91,7 +91,7 @@
         </li>
         </RouterLink>
 
-        <RouterLink to="/">
+        <RouterLink to="/programmationadmin">
         <li>
           <a
             class="
@@ -113,7 +113,7 @@
         </li>
         </RouterLink>
 
-        <RouterLink to="/artisteadmin">
+        <RouterLink to="/listeartisteadmin">
         <li>
           <a
             class="
