@@ -42,7 +42,7 @@
         
   </div>
   <div class="hidden lg:flex justify-center gap-[25px] bg-gray-100 pb-4">
-    <a href="/"><img class="mt-5 h-10" src="../public/Images/Logo.webp" alt="logo"></a>
+    <a href="/"><img class="mt-3 h-10" src="../public/Images/Logo.webp" alt="logo"></a>
 
     <ul class=" gap-8  font-lato font-semibold text-black flex flex-row">
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/programmation"><p>Programmation</p></RouterLink></li>
@@ -52,16 +52,22 @@
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/festival"><p>Le Festival</p></RouterLink></li>
       <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/contact"><p>Contact</p></RouterLink></li>
-      <div class="flex flex-row gap-8" v-if="isAdmin">
-        <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
-        <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/admin"><p>Admin</p></RouterLink></li>
+      <RouterLink to="/connexion"><IconConnexion class="mt-4"/></RouterLink>
+      <div class="hidden lg:flex" v-if="isAdmin">
+              <MenuDown class="mt-4"/>
       </div>
-      <RouterLink to="/connexion"><IconConnexion class="mt-5"/></RouterLink>
+
+      
     </ul>
   </div>
 </header>
 
-<p v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, une page apparait dans le menu</p>
+<p class="hidden lg:flex" v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
+
+<div class="flex flex-col justify-center bg-violet-100 py-10 lg:hidden" v-if="isAdmin">
+  <p class="lg:hidden" v-if="isConnecte">Contenu lorsque qu'une personne se connecte. Lorsqu'on est Admin, un menu admin se rajoute dans le menu basique</p>
+  <MenuDown class="mt-4"/>
+</div>
 
   <RouterView/>
 
@@ -99,6 +105,7 @@ import LigneMenu from './components/icons/LigneMenu.vue'
 import CroixMenu from './components/icons/CroixMenu.vue'
 import DecoFooter from './components/icons/DecoFooter.vue'
 import IconConnexion from './components/icons/IconConnexion.vue'
+import MenuDown from './components/MenuDown.vue'
 
 import { 
     getFirestore, 
@@ -123,8 +130,9 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.
 import { emitter } from './main.js'
 
 export default {
+
   name: "Accueil",
-  components: {MenuHamburger, LigneMenu, CroixMenu, DecoFooter, IconConnexion},
+  components: {MenuHamburger, LigneMenu, CroixMenu, DecoFooter, IconConnexion, MenuDown},
 
   beforeMount(){
     this.$router.afterEach(() => (this.menuOuvert = false));
@@ -211,3 +219,8 @@ export default {
     } 
 }
 </script>
+
+<style>
+@import '@/assets/style.css';
+
+</style>

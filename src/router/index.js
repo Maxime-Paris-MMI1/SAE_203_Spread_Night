@@ -35,7 +35,9 @@ import View404   from      '../views/View404.vue'
 
 
 
-import admin  from      '../views/AdminView.vue'
+import artisteadmin from      '../views/admin/ArtisteAdmin.vue'
+import listeartisteadmin from      '../views/admin/ListeartisteAdmin.vue'
+import programmationadmin from      '../views/admin/ProgrammationAdmin.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,7 +61,9 @@ const router = createRouter({
     { path: '/inscription',                        name: 'inscription',         component: inscription },
     { path: '/:pathMatch(.*)*', name: 'View404', component: View404 },
 
-    { path: '/admin', name: 'admin', component: admin, beforeEnter:guard },
+    { path: '/artisteadmin', name: 'artisteadmin', component: artisteadmin, beforeEnter:guard },
+    { path: '/listeartisteadmin', name: 'listeartisteadmin', component: listeartisteadmin, beforeEnter:guard },
+    { path: '/programmationadmin', name: 'programmationadmin', component: programmationadmin, beforeEnter:guard },
   ]
 })
 

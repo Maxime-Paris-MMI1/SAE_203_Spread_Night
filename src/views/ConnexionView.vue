@@ -20,11 +20,18 @@
                     <p>Pas encore inscrit ?</p>
                     <RouterLink class="text-violet-900 font-semibold" to="/inscription">S'inscrire</RouterLink>
                 </div>
-            <div class="flex justify-center gap-5 mt-10" @submit.prevent="onCnx">
+            <div class="flex justify-center gap-5 mt-10 mb-20" @submit.prevent="onCnx">
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="submit" @click="onCnx()">Se Connecter</button>
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="button" @click="onDcnx()">Se Déconnecter</button>
             </div>
         </div>
+
+
+<div>
+
+
+</div>
+
 
         <div class="font-montserrat flex flex-row justify-center gap-5 lg:gap-10 mt-12 mb-20 mx-3">
 
@@ -43,6 +50,8 @@
 </template>
  
 <script>
+
+import MenuDown from '../components/MenuDown.vue'
 import {emitter} from '../main.js'
 import {
     getFirestore,   // Obtenir le Firestore
@@ -65,6 +74,8 @@ import {
     createUserWithEmailAndPassword
 } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js'
 export default {
+    
+
     data(){
         return{
             user:{
