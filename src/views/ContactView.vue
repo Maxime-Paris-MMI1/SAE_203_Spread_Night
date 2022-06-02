@@ -24,7 +24,7 @@
             <input class="mb-7" type="checkbox" required> 
             <span class="font-montserrat font-normal text-[14px] text-white "> J’accepte les conditions d’utilisations </span>
             <div class=" text-center">
-            <input type="submit" value="Envoyer" name="submit" class=" bg-violet-600 text-white px-16 py-3 rounded-3xl border-none cursor-pointer shadow-lg text-lg font-montserrat font-medium hover:bg-[#0C4A6E] w-11/12">
+            <input type="submit" value="Envoyer" name="submit" class=" bg-violet-600 text-white px-16 py-3 rounded-3xl border-none cursor-pointer shadow-lg text-lg font-montserrat font-medium hover:bg-[#0369A1] w-11/12">
             </div>
           </form>
         </div>

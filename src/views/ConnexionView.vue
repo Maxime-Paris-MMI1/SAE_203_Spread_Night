@@ -1,31 +1,37 @@
 <template>
-    <!-- <div class="mt-12 px-5 grid grid-cols-1 lg:grid-cols-2 relative "> -->
         <div>
-            <h2 class="my-1 col-span-full text-3xl font-lato text-center">Connection</h2>
-            <form class="grid grid-cols-[minmax(5rem,8rem)_minmax(5rem,35rem)] mx-3 gap-1" @submit.prevent="onCnx">
-
-            <fieldset class="contents">
-              <label >Email :</label>
-              <input type="email" class="rounded-sm border-2 text-black font-montserrat"  v-model="user.email" required>
-              <label >Password : </label>
-              <input class="rounded-sm border-2 text-black font-montserrat" type="password" v-model="user.password" required/>  
-            </fieldset>
-            </form>
+            <h2 class="my-1 col-span-full text-3xl font-lato text-center mt-3">Connexion</h2>
+                <form class="" @submit.prevent="onCnx">
+                
+                <fieldset class="w-1/4 mx-auto mt-10 flex flex-col gap-8">
+                    <div class="grid grid-rows-1">
+                        <label class="font-montserrat text-2xl mb-3">Email :</label>
+                        <input type="email" class="rounded-sm border-2 text-black font-montserrat text-lg"  v-model="user.email" required>
+                    </div>
+                    <div class="grid grid-rows-1 mb-2">
+                        <label class="font-montserrat text-2xl mb-3">Password : </label>
+                        <input class="rounded-sm border-2 text-black font-montserrat text-lg" type="password" v-model="user.password" required/>  
+                    </div>
+                </fieldset>
+                </form>
+                <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
             <div class="flex justify-center gap-5 mt-10" @submit.prevent="onCnx">
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="submit" @click="onCnx()">Se Connecter</button>
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="button" @click="onDcnx()">Se Déconnecter</button>
             </div>
-          <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
         </div>
-        <div>
-            <p>Exemple compte admin :</p>
-            <p class="pl-5">email : test@gmail.com</p>
-            <p class="pl-5">mdp : 123456</p>
-            <p>Exemple compte classique :</p>
-            <p class="pl-5">email : testnonadmin@gmail.com</p>
-            <p class="pl-5">mdp : 123456</p>
+        <div class="font-montserrat flex flex-row justify-center gap-5 lg:gap-10 mt-12 mb-20 mx-3">
+            <div class="flex flex-col flex-wrap text-xs sm:text-sm lg:text-xl">
+                <p>compte admin :</p>
+                <p>- email : test@gmail.com</p>
+                <p>- mdp : 123456</p>
+            </div>
+            <div class="flex flex-col flex-wrap text-xs sm:text-sm lg:text-xl">
+                <p>compte classique :</p>
+                <p>- email : testnonadmin@gmail.com</p>
+                <p>- mdp : 123456</p>
+            </div>
         </div>
-    <!-- </div> -->
 </template>
  
 <script>
