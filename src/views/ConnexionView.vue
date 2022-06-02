@@ -6,15 +6,18 @@
                 <fieldset class="w-1/4 mx-auto mt-10 flex flex-col gap-8">
                     <div class="grid grid-rows-1">
                         <label class="font-montserrat text-2xl mb-3">Email :</label>
-                        <input type="email" class="rounded-sm border-2 text-black font-montserrat text-lg"  v-model="user.email" required>
+                        <input type="email" class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2"  v-model="user.email" required>
                     </div>
                     <div class="grid grid-rows-1 mb-2">
                         <label class="font-montserrat text-2xl mb-3">Password : </label>
-                        <input class="rounded-sm border-2 text-black font-montserrat text-lg" type="password" v-model="user.password" required/>  
+                        <input class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2" type="password" v-model="user.password" required/>  
                     </div>
                 </fieldset>
                 </form>
-                <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
+                <div class="flex flex-row justify-center gap-2 text-xs sm:text-sm lg:text-lg font-montserrat font-medium mt-5">
+                    <p>Pas encore inscrit ?</p>
+                    <RouterLink class="text-violet-900 font-semibold" to="/inscription">S'inscrire</RouterLink>
+                </div>
             <div class="flex justify-center gap-5 mt-10" @submit.prevent="onCnx">
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="submit" @click="onCnx()">Se Connecter</button>
                 <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5" type="button" @click="onDcnx()">Se Déconnecter</button>
@@ -32,6 +35,7 @@
                 <p>- mdp : 123456</p>
             </div>
         </div>
+        <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
 </template>
  
 <script>
@@ -65,7 +69,7 @@ export default {
                 password:'',
             },
             password2:'',
-            message:'bonjour',
+            message:'hello',
             type:'password'
         }
     },

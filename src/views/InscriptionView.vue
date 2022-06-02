@@ -1,19 +1,24 @@
 <template>
         <div>
-            <form class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1 " @submit.prevent="onCreate">
+            <form class="w-1/4 mx-auto mt-10 flex flex-col" @submit.prevent="onCreate">
                 <fieldset class="contents">
-                    <legend class="my-1 border-b-2 col-span-full">Créer un compte</legend>
-                    <label>Login :</label>
-                    <input type="text" class="rounded-sm border-2 text-black" v-model="user.login">
-                    <label>Email :</label>
-                    <input type="email" class="rounded-sm border-2 text-black" v-model="user.email">
-                    <label>Password : </label>
-                    <input type="password" class="rounded-sm border-2 text-black" v-model="user.password">
-                    <label>Répéter le Password : </label>
-                    <input class="rounded-sm border-2 text-black" type="password" v-model="password2"/>
-                    <button class="px-3 py-2 rounded-2xl bg-violet-900 text-white hover:bg-violet-700" type="submit" >Créer</button>    
+                    <legend class="font-montserrat text-2xl mb-3 border-b-2">Créer un compte</legend>
+                    <label class="font-montserrat text-2xl mb-3 mt-2">Login :</label>
+
+                    <input type="text" class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2" v-model="user.login" required>
+                    <label class="font-montserrat text-2xl mb-3 mt-2">Email :</label>
+
+                    <input type="email" class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2" v-model="user.email" required>
+                    <label class="font-montserrat text-2xl mb-3 mt-2">Mot de passe : </label>
+
+                    <input type="password" class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2" v-model="user.password" required>
+                    <label class="font-montserrat text-2xl mb-3 mt-2">Répéter le mot de passe : </label>
+
+                    <input class="rounded-xl border-2 text-black font-montserrat lg:text-lg sm:text-sm pl-2 mb-10" type="password" v-model="password2" required>
+                    <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5 mb-20 mt-2" type="submit" >Créer</button>    
                 </fieldset>
             </form>
+            <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
            
         </div>
 </template>
@@ -49,12 +54,12 @@ export default {
                 password:'',
             },
             password2:'',
-            message:'bonjour',
+            message:'hello',
             type:'password'
         }
     },
     mounted(){
-        this.message = "User non connecté";
+        this.message = "Vous n'avez pas encore crée de compte";
     },
     methods:{
         onCnx(){
@@ -90,12 +95,11 @@ export default {
                     .then((response) => {
                         // Signed in
                         const user = response.user;
-                        // ...
+                        window.location.pathname = '/connexion'
                     })
                     .catch((error) => {
                         console.log('erreur création', error);
                         this.message = "erreur de création";
-                        // ..
                 })
                
                 this.onCnx();
@@ -111,12 +115,12 @@ export default {
                 })
                 console.log('document créé avec le id : ', docRef.id);
                 } else {
-                    console.log("user pas connecter")
+                    console.log("user pas connecté")
                 }
                 });
                
             }else{
-                this.message = "password pas cohérent"
+                this.message = "mot de passe pas cohérent"
                 console.log('mauvais mot de passe')
             }
         },
