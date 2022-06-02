@@ -13,11 +13,17 @@
   </div>
   <div id="menu" class="z-50 fixed inset-0  translate-x-full bg-[#0369A1] motion-safe:duration-1000 motion-safe:transition-transform h-full lg:hidden" v-if="menuOuvert"
       :class="{ 'translate-x-0': menuOuvert }">
-        <div class="flex flex-row justify-end">
+        <div class="flex flex-row justify-between">
+          <RouterLink to="/connexion">
+            <IconConnexion class=" mt-12 ml-8"
+            couleur="#ffffff"
+            couleur1="#ffffff"/>
+          </RouterLink>
           <button class="relative z-50 mr-8 mt-12" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
             <CroixMenu :class="{'motion-safe:animate-[BackInRight_1s_cubic-bezier(0,1,.24,1)]' : menuOuvert}"/>
           </button>
         </div>
+
         <nav class="text-white font-lato font-medium text-2xl pt-20">
           <ul class="flex flex-col text-center gap-[70px]">
            <RouterLink :class="{' motion-safe:animate-[Depart_0.05s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/programmation">Programmation</RouterLink>
@@ -46,6 +52,7 @@
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/festival"><p>Le Festival</p></RouterLink></li>
       <LigneMenu class="mt-9 motion-safe:animate-[barmenu_1.5s_cubic-bezier(.01,.95,.5,.91)]"/>
       <li class="pt-6 font-lato font-semibold text-lg"><RouterLink to="/contact"><p>Contact</p></RouterLink></li>
+      <RouterLink to="/connexion"><IconConnexion class="mt-5"/></RouterLink>
     </ul>
   </div>
 </header>
@@ -83,10 +90,11 @@ import MenuHamburger from './components/icons/MenuHamburger.vue'
 import LigneMenu from './components/icons/LigneMenu.vue'
 import CroixMenu from './components/icons/CroixMenu.vue'
 import DecoFooter from './components/icons/DecoFooter.vue'
+import IconConnexion from './components/icons/IconConnexion.vue'
 
 export default {
   name: "Accueil",
-  components: {MenuHamburger, LigneMenu, CroixMenu, DecoFooter},
+  components: {MenuHamburger, LigneMenu, CroixMenu, DecoFooter, IconConnexion},
 
   data() {
     return {
