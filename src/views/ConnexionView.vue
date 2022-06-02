@@ -1,8 +1,7 @@
 <template>
         <div>
             <h2 class="my-1 col-span-full text-3xl font-lato text-center mt-3">Connexion</h2>
-                <form class="" @submit.prevent="onCnx">
-                
+                <form @submit.prevent="onCnx">
                 <fieldset class="w-1/4 mx-auto mt-10 flex flex-col gap-8">
                     <div class="grid grid-rows-1">
                         <label class="font-montserrat text-2xl mb-3">Email :</label>
