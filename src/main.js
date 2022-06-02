@@ -7,7 +7,7 @@ import './index.css'
 
 
 // Import fonction d'initialisation du SDK Firebase
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 
 // Votre configuration de Firebase
 const firebaseConfig = {
@@ -23,6 +23,12 @@ const firebaseConfig = {
 const appFirebase = initializeApp(firebaseConfig);
 
 const app = createApp(App)
+
+// Création d'un emetteur mitt exportable
+export const emitter = mitt();
+// créer l'émetteur comme propriété globale
+// de l'application
+app.config.globalProperties.emitter = emitter;
 
 app.use(router)
 

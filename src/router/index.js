@@ -30,6 +30,7 @@ import programmation29    from      '../views/programmation/ProgrammationSamedi2
 import concertmartingarrix   from      '../views/concert/ConcertMartingarrix.vue'
 import martingarrix  from      '../views/artiste/MartinGarrix.vue'
 import connexion  from      '../views/ConnexionView.vue'
+import inscription  from      '../views/InscriptionView.vue'
 import View404   from      '../views/View404.vue'
 
 const router = createRouter({
@@ -51,6 +52,7 @@ const router = createRouter({
     { path: '/concertmartingarrix',                        name: 'concertmartingarrix',         component: concertmartingarrix  },
     { path: '/martingarrix',                        name: 'martingarrix',         component: martingarrix  },
     { path: '/connexion',                        name: 'connexion',         component: connexion },
+    { path: '/inscription',                        name: 'inscription',         component: inscription },
     { path: '/:pathMatch(.*)*', name: 'View404', component: View404 },
   ]
 })
