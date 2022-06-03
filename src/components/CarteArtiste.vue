@@ -3,7 +3,7 @@
         <div class="flex-grow-0 flex-shrink-0 w-[280.12px] h-[291.34px]">
             <div class="w-[300px] h-[147.75px]">
                 <img
-                  :src="image"
+                  :src="imageartiste"
                   class="h-[156.64px] absolute object-cover rounded-tl-lg rounded-tr-lg ml-10"
                 />
             </div>
@@ -67,7 +67,7 @@ export default {
         },
         chansonconnue: String,
         artiste: String,
-        image: String,
+        imageartiste: String,
     },
 }
 </script>
