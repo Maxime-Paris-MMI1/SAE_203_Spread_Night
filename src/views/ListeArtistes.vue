@@ -10,7 +10,7 @@
 
     <span class="flex flex-row justify-center gap-3 mt-16">
         <span class="font-lato lg:text-xl ">Filtrage</span>
-        <input type="text" class="border-2 pl-2" v-model="filter" />
+        <input type="text" class="border-2 pl-2" v-model="query" />
 
         <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5 hidden lg:flex"
          type="button"  title="Filtrage">
@@ -74,13 +74,11 @@ export default {
             artiste:null, //pour la création
             listArt:[],
             query:'',
-            filter:'',
 
         }
     },
 
     mounted(){
-       // debugger
       this.getArtiste();
     },
 
@@ -119,42 +117,13 @@ export default {
     },
 
     computed:{
-    searchByartiste(){
+        searchByName(){
             let query = this.query;
                 return this.listArt.filter(function(artistes){
                     return artistes.artiste.includes(query);
-            })
-    },
-            // Tri des pays par nom en ordre croissant
+            })    
+        },
 
-    orderByartiste:function(){
-    // Parcours et tri des pays 2 à 2
-      return this.artiste.sort(function(a,b){
-    // Si le nom du pays est avant on retourne -1
-        if(a.artiste < b.artiste) return -1;
-    // Si le artiste du pays est après on retourne 1
-        if(a.artiste > b.artiste) return 1;
-    // Sinon ni avant ni après (homonyme) on retourne 0
-        return 0;
-      });
-    },
-    // Filtrage de la propriété calculée de tri
-    filterByartiste:function(){
-
-      if(this.filter.length > 0){
-
-        let filter = this.filter.toLowerCase();
-
-        return this.orderByartiste.filter(function(artiste){
-
-          return artistes.artiste.toLowerCase().includes(filter);
-        })
-      }else{
-
-        return this.orderByartiste;
-      }
     }
-
-    },
   }
 </script>
