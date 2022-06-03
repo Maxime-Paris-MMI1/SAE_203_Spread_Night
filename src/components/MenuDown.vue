@@ -91,27 +91,6 @@
         </li>
         </RouterLink>
 
-        <RouterLink to="/modifartiste">
-        <li>
-          <a
-            class="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-violet-100
-            "
-            href="#"
-            >Modif artiste</a
-          >
-        </li>
-        </RouterLink>
 
         <RouterLink to="/gestionartiste">
         <li>

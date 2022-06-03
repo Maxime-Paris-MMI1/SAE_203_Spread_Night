@@ -38,6 +38,7 @@ import View404   from      '../views/View404.vue'
 import artisteadmin from      '../views/admin/ArtisteAdmin.vue'
 import gestionartiste from     '../views/admin/GestionArtiste.vue'
 import modifartiste from      '../views/admin/ModifArtiste.vue'
+import deleteartiste from      '../views/admin/DeleteArtiste.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,7 +64,8 @@ const router = createRouter({
 
     { path: '/artisteadmin', name: 'artisteadmin', component: artisteadmin, beforeEnter:guard },
     { path: '/gestionartiste', name: 'gestionartiste', component: gestionartiste, beforeEnter:guard },
-    { path: '/modifartiste', name: 'modifartiste', component: modifartiste, beforeEnter:guard },
+    { path: '/modifartiste/:id', name: 'modifartiste', component: modifartiste, beforeEnter:guard },
+    { path: '/deleteartiste/:id', name: 'deleteartiste', component: deleteartiste, beforeEnter:guard },
   ]
 })
 

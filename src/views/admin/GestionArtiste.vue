@@ -1,179 +1,125 @@
 <template>
-    <h1 class="font-lato text-2xl text-center border-b-2 mb-20">Gestion Artiste</h1>
-
-    <div class="container">
-        <form class="flex flex-row gap-6">
-          <h6>Nouvelle catégorie</h6>
-          <div class="input-group">
-            <span class="input-group-text">Libellé</span>
-            <input type="text" class="form-control" v-model='libelle' required/>
-            <button class="btn btn-light" type="button" @click='createCat()' title="Création">
-              <i class="fa fa-save fa-lg"></i>
-            </button>
+  <div class="mt-12 px-5 flex flex-col gap-20 relative">
+      <div class="flex justify-between items-end">
+        <h1 class="text-4xl underline font-lato">Liste artiste</h1>
+        <RouterLink to="/create"> <div class=" bg-red-700 text-white font-lato px-10 py-4 rounded-2xl hover:bg-red-600"><p class="effet-shadowblanc">Créer +</p></div> </RouterLink>
+      </div>
+      <div class="block overflow-x-auto w-full">
+         
+          <div class="relative float-right w-1/3">
+           <p class="  font-lato ">Taper pour rechercher</p>
+              <input type="search" class="w-full rounded-xl h-10 text-black px-4 bg-slate-200" placeholder="Recherche par nom" v-model="query">
+           
           </div>
-        </form>
 
-        <div class="card-body table-responsive">
-            <table class="table text-light">
-                <thead>
-                    <tr>                      
-                        <th scope="col">
-                          <div class="float-left">Liste des Catégories actuelles</div>                          
-                          <span class="float-right">
-                            <div class="input-group" >
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" >Filtrage</span>
-                                </div>
-                                <input type="text" class="form-control" v-model="filter" />
-                                <button class="btn btn-light" type="button"  title="Filtrage">
-                                  <i class="fa fa-search fa-lg"></i>
-                                </button>
-                              </div>
-                          </span>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                          <form 
-                            v-for="cat in filterByName" :key="cat.id">
-                            <div class="input-group" >
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">Libelle</span>
-                              </div>
-                              <input type="text" class="form-control" v-model='cat.libelle' required />
-                              <button class="btn btn-light" type="button"  @click="updateCat(cat)" title="Modification">
-                                <i class="fa fa-save fa-lg"></i>
-                              </button>
-                              <button class="btn btn-light" type="button" @click="deleteCat(cat)" title="Suppression">
-                                <i class="fa fa-trash fa-lg"></i>
-                              </button>
-                            </div>
-                          </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+          <table class="w-full">
+            <thead>
+                <tr class="border-b-2">
+                    <th class="w-64 p-3 font-lato ">Image</th>
+                    <th class="w-1/5 font-lato ">Nom</th>
+                    <th class="w-1/5 font-lato ">Chanson connue</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="artistes in searchByName" :key="artistes.id" class="mt-2">
+                    <td class=""><img :src="artistes.imageartiste" :alt="artistes.artiste" class="w-full h-auto"></td>
+                    <td class="text-center font-lato ">{{artistes.artiste}}</td>
+
+                    <td class="text-center ">
+                        
+
+
+                        <RouterLink :to="{ name:'deleteartiste', params: { id: artistes.id }}">
+                         <div class=" p-7 bg-red-900 text-white font-lato px-4 py-3 rounded-2xl mb-8 effet-shadowblanc ">
+                    Supprimer
+                        </div>
+                        </RouterLink>
+
+
+
+                    <RouterLink :to="{ name:'modifartiste', params: { id: artistes.id }}">
+                        <div class="bg-red-600 text-white font-lato px-4 py-3 rounded-2xl effet-shadowblanc">
+                    Modifier
+
+
+                    </div>
+                    </RouterLink>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+  </div>
 </template>
 
 <script>
-// Bibliothèque Firestore : import des fonctions
+import {
+    getFirestore,
+    collection,
+    doc,
+    query,
+    orderBy,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    onSnapshot } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js'
 import { 
-    getFirestore, 
-    collection, 
-    doc, 
-    getDocs, 
-    addDoc, 
-    updateDoc, 
-    deleteDoc, 
-    onSnapshot, 
-    orderBy
-    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+    getStorage,             // Obtenir le Cloud Storage
+    ref,                    // Pour créer une référence à un fichier à uploader
+    getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
+    uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
+} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js'
 
 
 export default {
-  name:'ListeView',
-  data() {
-    return {
-      listeCat:[],  // Liste des categories - collection categorie Firebase
-      libelle:null, // Pour la création d'une nouvelle catégorie
-      filter:''
-    }
-  },
-  computed:{
-    // Tri des categorie par libelle en ordre croissant
-    orderByName:function(){
-      // Parcours et tri des categories 2 à 2
-      return this.listeCat.sort(function(a,b){
-        // Si le libelle de la categorie est avant on retourne -1
-        if(a.libelle < b.libelle) return -1;
-        // Si le nom de la categorie est après on retourne 1
-        if(a.libelle > b.libelle) return 1;
-        // Sinon ni avant ni après (homonyme) on retourne 0
-        return 0;
-      });
+   
+    data(){
+        return{
+            listArt:[],
+            query:'',
+            
+        }
     },
-    // Filtrage de la propriété calculée de tri
-    filterByName:function(){
-      // On effectue le fitrage seulement si le filtre est renseigné
-      if(this.filter.length > 0){
-        // On récupère le filtre saisi en minuscule (on évite les majuscules)
-        let filter = this.filter.toLowerCase();
-        // Filtrage de la propriété calculée de tri
-        return this.orderByName.filter(function(cat){
-          // On ne renvoie que les categories dont le libelle contient 
-          // la chaine de caractère du filtre
-          return cat.libelle.toLowerCase().includes(filter);
-        })
-      }else{
-        // Si le filtre n'est pas saisi
-        // On renvoie l'intégralité de la liste triée
-        return this.orderByName;
-      }
-    }
-  },
-  mounted(){ // Montage de la vue
-    // Appel de la liste des categories synchronisée
-    this.getCat();
-  },
-  methods: {
-    async getCat(){
-      // Obtenir Firestore
-      const firestore = getFirestore();
-      // Base de données (collection)  document categorie
-      const dbCat= collection(firestore, "categorie");
-      // Liste des pays synchronisée
-      const query = await onSnapshot(dbCat, (snapshot) =>{
-      console.log('query', query);
-        //  Récupération des résultats dans listeCat
-        // On utilse map pour récupérer l'intégralité des données renvoyées
-        // on identifie clairement le id du document
-        // les rest parameters permet de préciser la récupération de toute la partie data
-        this.listeCat = snapshot.docs.map(doc => ({id:doc.id, ...doc.data()}));
-        console.log('listecat', this.listeCat);
-      })      
+    mounted(){
+      this.getArtiste();
     },
-
-    async createCat(){
-      // Obtenir Firestore
-      const firestore = getFirestore();
-      // Base de données (collection)  document categorie
-      const dbCat = collection(firestore, "categorie");
-      // On passe en paramètre format json
-      // Les champs à mettre à jour
-      // Sauf le id qui est créé automatiquement    
-      const docRef = await addDoc(dbCat,{
-          libelle: this.libelle
-      })
-      console.log('document créé avec le id : ', docRef.id);
-    },
-
-    async updateCat(cat){
-        // Obtenir Firestore
+    methods:{
+      async getArtiste(){
         const firestore = getFirestore();
-        // Base de données (collection)  document categorie
-        // Reference de la categorie à modifier
-        const docRef = doc(firestore, "categorie", cat.id);
-        // On passe en paramètre format json
-        // Les champs à mettre à jour
-        await updateDoc(docRef, {
-            libelle: cat.libelle
-        }) 
+          const dbArt = collection(firestore, "artistes");
+          const q = query(dbArt, orderBy('artiste', 'asc'));
+          await onSnapshot(q, (snapshot) =>{
+              this.listArt = snapshot.docs.map(doc =>({
+                  id:doc.id, ...doc.data()
+              }))
+          this.listArt.forEach(function(artistes){
+              const storage = getStorage();
+              const spaceRef = ref(storage, 'imageartiste/'+artistes.imageartiste);
+              getDownloadURL(spaceRef)
+              .then((url) =>{
+                  artistes.imageartiste = url;
+              })
+              .catch((error) =>{
+                  console.log('erreur download url', error);
+              })
+          })
+          
+          })
       },
-
-      async deleteCat(cat){
-          // Obtenir Firestore
-          const firestore = getFirestore();
-          // Base de données (collection)  document categorie
-          // Reference de la categorie à supprimer
-          const docRef = doc(firestore, "categorie", cat.id);
-          // Suppression categorie référencé
-          await deleteDoc(docRef);
+    },
+    computed:{
+        searchByName(){
+            let query = this.query;
+                return this.listArt.filter(function(artistes){
+                    return artistes.artiste.includes(query);
+            })    
         },
 
-  }
+    }
 }
-</script>   
+</script>

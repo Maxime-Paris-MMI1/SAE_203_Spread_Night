@@ -19,6 +19,7 @@
     </span>
 
  <div class="mx-auto w-3/4 justify-center items-center gap-7 mt-20 mb-20 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
+
         <CarteArtiste v-for="artiste in listArt" :key="artiste.id"
         class="mb-16"
         titrebouton="En savoir plus"
