@@ -1,5 +1,5 @@
 <template>
-    <h1 class="font-lato text-2xl text-center border-b-2 mb-20">Page artiste admin</h1>
+    <h1 class="font-lato text-2xl text-center border-b-2 mb-20">Gestion Artiste</h1>
 
     <div class="container">
         <form class="flex flex-row gap-6">

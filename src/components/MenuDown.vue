@@ -86,12 +86,12 @@
               hover:bg-violet-100
             "
             href="#"
-            >Page Artiste</a
+            >Création Artiste</a
           >
         </li>
         </RouterLink>
 
-        <RouterLink to="/programmationadmin">
+        <RouterLink to="/modifartiste">
         <li>
           <a
             class="
@@ -108,12 +108,12 @@
               hover:bg-violet-100
             "
             href="#"
-            >Programmation festival</a
+            >Modif artiste</a
           >
         </li>
         </RouterLink>
 
-        <RouterLink to="/listeartisteadmin">
+        <RouterLink to="/gestionartiste">
         <li>
           <a
             class="
@@ -130,29 +130,7 @@
               hover:bg-violet-100
             "
             href="#"
-            >Card liste artiste</a
-          >
-        </li>
-        </RouterLink>
-
-        <RouterLink to="/listenomartiste">
-        <li>
-          <a
-            class="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-violet-100
-            "
-            href="#"
-            >Liste artiste</a
+            >Gestion Artiste</a
           >
         </li>
         </RouterLink>
