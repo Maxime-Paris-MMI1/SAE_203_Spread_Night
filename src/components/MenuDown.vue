@@ -135,7 +135,7 @@
         </li>
         </RouterLink>
 
-        <RouterLink to="/listeartisteadmin">
+        <RouterLink to="/listenomartiste">
         <li>
           <a
             class="
