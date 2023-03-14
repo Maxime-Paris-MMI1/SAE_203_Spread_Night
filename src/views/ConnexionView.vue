@@ -32,20 +32,6 @@
 
 </div>
 
-
-        <div class="font-montserrat flex flex-row justify-center gap-5 lg:gap-10 mt-12 mb-20 mx-3">
-
-            <div class="flex flex-col flex-wrap text-xs sm:text-sm lg:text-xl">
-                <p>compte admin :</p>
-                <p>- email : test@gmail.com</p>
-                <p>- mdp : 123456</p>
-            </div>
-            <div class="flex flex-col flex-wrap text-xs sm:text-sm lg:text-xl">
-                <p>compte classique :</p>
-                <p>- email : testnonadmin@gmail.com</p>
-                <p>- mdp : 123456</p>
-            </div>
-        </div>
         <p class="w-full text-center py-3 bg-violet-100 rounded-sm mt-5 text-black font-montserrat">{{message}}</p>
 </template>
  
